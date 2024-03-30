@@ -1,0 +1,29 @@
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/axon/.config/polybar/config
+polybar|notice:  Listening for IPC messages (PID: 7166)
+polybar|notice:  Loading module 'spacer' of type 'custom/script'
+polybar|notice:  Loading module 'xworkspacesROUND' of type 'internal/xworkspaces'
+polybar|notice:  Loaded 2 modules
+polybar|notice:  Loaded font "JetBrainsMono-Regular" (name=JetBrains Mono, offset=2, file=/usr/share/fonts/JetBrainsMono-Regular.ttf)
+polybar|notice:  Loaded font "SymbolsNerdFont-Regular" (name=Symbols Nerd Font, offset=2, file=/usr/share/fonts/SymbolsNerdFont-Regular.ttf)
+polybar|notice:  Loaded font "monospace" (name=Noto Sans Mono, offset=2, file=/usr/share/fonts/noto/NotoSansMono-Regular.ttf)
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+ulseaudio: using default sink alsa_output.pci-0000_2a_00.4.analog-stereo
+polybar|notice:  Loading module 'divider' of type 'custom/script'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'divider' of type 'custom/script'
+polybar|notice:  Loading module 'date2' of type 'internal/date'
+polybar|notice:  Loaded 14 modules
+polybar|notice:  Loaded font "SymbolsNerdFont-Regular" (name=Symbols Nerd Font, offset=2, file=/usr/share/fonts/SymbolsNerdFont-Regular.ttf)
+polybar|notice:  Loaded font "JetBrainsMono-Regular" (name=JetBrains Mono, offset=2, file=/usr/share/fonts/JetBrainsMono-Regular.ttf)
+polybar|warn:  Dropping unmatched character '⏸' (U+23f8) in '⏸ 25:00'
+polybar|warn:  Dropping unmatched character '⏸' (U+23f8) in '⏸ 25:00'
+polybar|warn:  Dropping unmatched character '⏸' (U+23f8) in '⏸ 25:00'
+polybar|warn:  Dropping unmatched character '⏸' (U+23f8) in '⏸ 25:00'
+polybar|warn:  Dropping unmatched character '⏸' (U+23f8) in '⏸ 25:00'
+polybar|warn:  Dropping unmatched character '⏸' (U+23f8) in '⏸ 25:00'
+polybar|warn:  Dropping unmatched character '⏸' (U+23f8) in '⏸ 25:00'
+polybar|warn:  Dropping unmatched character '⏸' (U+23f8) in '⏸ 25:00'
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...

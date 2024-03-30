@@ -1,0 +1,544 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+background = #24273a
+;background = #1e2030
+background-alt = #373B41
+foreground = #ffffff
+primary = #e49e79
+secondary = #a5d995
+alert = #A54242
+disabled = #707880
+color0 = #a4b9ef
+;blue
+color1 = #b1e3ad
+;green
+color2 = #e5b4e2
+;pink
+color3 = #f9c096
+;orange
+color4 = #e38c8f
+;red
+color5 = #6e6c7e
+;gray
+color6 = #e0d1a2
+;yellow
+color7 = #
+
+[bar/mybar] 
+monitor = HDMI-A-0
+width = 100%.
+;offset-x = 0%
+height = 20pt
+;radius = 6
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 0pt
+border-color = #e49e79
+
+bottom = false
+
+padding-left = 0
+padding-right = 1
+padding-top = 2
+padding-bottom = 3
+
+module-margin = 1
+
+;separator = |
+;separator = /
+separator-foreground = ${colors.primary}
+
+font-0 = SymbolsNerdFont-Regular;2
+font-1 = monospace;2
+;font-2 = "fontawesome-free-6.4.2-dekstop"
+
+modules-left = spacer xworkspacesROUND 
+modules-right = divider theme-switcher screenshot divider alacritty files firefox spotify divider pulseaudio date
+modules-center = mocpinfo
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+;override-redirect = true
+
+[bar/mybar2] 
+monitor = DisplayPort-0
+width = 100%.
+;offset-x = 0%
+height = 20pt
+;radius = 6
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 0pt
+border-color = #e49e79
+
+bottom = false
+
+padding-left = 0
+padding-right = 1
+padding-top = 2
+padding-bottom = 3
+
+module-margin = 1
+
+;separator = |
+;separator = /
+separator-foreground = ${colors.primary}
+
+font-0 = SymbolsNerdFont-Regular;2
+font-1 = monospace;2
+;font-2 = "fontawesome-free-6.4.2-dekstop"
+
+modules-left = spacer xworkspacesROUND 
+modules-right = divider mocpprev mocppause mocpnext divider theme-switcher screenshot divider alacritty files firefox spotify divider pulseaudio date
+modules-center =
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+;override-redirect = true
+
+[bar/mybarBOTTOM]
+monitor = DisplayPort-0
+width = 30%
+;offset-x = 0%
+height = 28pt
+;radius = 6
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 0pt
+border-color = #e49e79
+
+bottom = true
+
+padding-left = 0
+padding-right = 1
+padding-top = 2
+padding-bottom = 3
+
+module-margin = 1
+
+;separator = |
+;separator = /
+separator-foreground = ${colors.primary}
+
+font-0 = SymbolsNerdFont-Regular;2
+font-1 = monospace;2
+;font-2 = "fontawesome-free-6.4.2-dekstop"
+
+modules-left = 
+modules-right = divider theme-switcher screenshot divider alacritty files firefox spotify divider pulseaudio date
+modules-center = 
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+;override-redirect = true
+
+[module/xworkspaces]
+type = internal/xworkspaces
+;format-
+
+label-active = %name%
+label-active-background = ${colors.background-alt}
+label-active-underline= ${colors.primary}
+label-active-padding = 1
+
+label-occupied = %name%
+label-occupied-padding = 1
+
+label-urgent = %name%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+label-empty = %name%
+label-empty-foreground = ${colors.disabled}
+label-empty-padding = 1
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:60:...%
+label-foreground = ${colors.primary}
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+
+label-mounted = %{F#F0C674}%mountpoint%%{F-} %percentage_used%%
+
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.disabled}
+
+[module/pulseaudio]
+type = internal/pulseaudio
+format-volume-foreground = ${colors.color0}
+
+format-volume-prefix = "󰕾 "
+format-volume-prefix-foreground = ${colors.color0}
+format-volume = <label-volume>
+
+label-volume = %percentage%%
+
+label-muted = "󰸈    "
+label-muted-foreground = ${colors.color4}
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+label-layout = %layout%
+label-layout-foreground = ${colors.primary}
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-foreground = ${colors.background}
+label-indicator-background = ${colors.secondary}
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "RAM "
+format-prefix-foreground = ${colors.primary}
+label = %percentage_used:2%%
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "CPU "
+format-prefix-foreground = ${colors.primary}
+label = %percentage:2%%
+
+[network-base]
+type = internal/network
+interval = 5
+format-connected = <label-connected>
+format-disconnected = <label-disconnected>
+label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
+
+[module/wlan]
+inherit = network-base
+interface-type = wireless
+label-connected = %{F#F0C674}%ifname%%{F-} %essid% %local_ip%
+
+[module/eth]
+inherit = network-base
+interface-type = wired
+label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = %H:%M
+date-alt = %Y-%m-%d %H:%M:%S
+
+label = %date%
+label-foreground = ${colors.primary}
+
+[settings]
+screenchange-reload = true
+pseudo-transparency = true
+
+; vim:ft=dosini
+
+[module/battery]
+type = internal/battery
+format-battery-prefix = "󰁹"
+format-battery-prefix-foreground = ${colors.color1}
+
+label-battery = %percentage%
+
+; This is useful in case the battery never reports 100% charge
+; Default: 100
+full-at = 99
+
+; format-low once this charge percentage is reached
+; Default: 10
+; New in version 3.6.0
+low-at = 5
+
+; Use the following command to list batteries and adapters:
+; $ ls -1 /sys/class/power_supply/
+battery = BAT0
+adapter = AC
+
+; If an inotify event haven't been reported in this many
+; seconds, manually poll for new values.
+;
+; Needed as a fallback for systems that don't report events
+; on sysfs/procfs.
+;
+; Disable polling by setting the interval to 0.
+;
+; Default: 5
+poll-interval = 5
+
+[module/battery2]
+type = internal/battery
+format-prefix = "󰁹"
+format-prefix-foreground = ${colors.color1}
+
+; This is useful in case the battery never reports 100% charge
+; Default: 100
+full-at = 99
+
+; format-low once this charge percentage is reached
+; Default: 10
+; New in version 3.6.0
+low-at = 5
+
+; Use the following command to list batteries and adapters:
+; $ ls -1 /sys/class/power_supply/
+battery = BAT1
+adapter = AC
+
+
+; If an inotify event haven't been reported in this many
+; seconds, manually poll for new values.
+;
+; Needed as a fallback for systems that don't report events
+; on sysfs/procfs.
+;
+; Disable polling by setting the interval to 0.
+;
+; Default: 5
+poll-interval = 5
+
+[module/backlight]
+type = internal/backlight
+format-prefix = "󰃞 " 
+format-prefix-foreground = ${colors.color6}
+
+; Use the following command to list available cards:
+; $ ls -1 /sys/class/backlight/
+card = intel_backlight
+
+; Use the `/sys/class/backlight/.../actual-brightness` file
+; rather than the regular `brightness` file.
+; Defaults to true unless the specified card is an amdgpu backlight.
+; New in version 3.6.0
+use-actual-brightness = true
+
+; Enable changing the backlight with the scroll wheel
+; NOTE: This may require additional configuration on some systems. Polybar will
+; write to `/sys/class/backlight/${self.card}/brightness` which requires polybar
+; to have write access to that file.
+; DO NOT RUN POLYBAR AS ROOT. 
+; The recommended way is to add the user to the
+; `video` group and give that group write-privileges for the `brightness` file.
+; See the ArchWiki for more information:
+; https://wiki.archlinux.org/index.php/Backlight#ACPI
+; Default: false
+enable-scroll = true
+
+[module/wallpaper]
+type = custom/script
+exec = echo " 󱤆"
+;click-left= feh -z --bg-fill /home/axon/VagabondWallpaper
+;click-left= feh -z --bg-fill /home/axon/Wallpaper
+click-left= feh -z --bg-fill /home/axon/Bilder/catppuccin
+
+[module/screenshot]
+type = custom/script
+exec = echo "󰄄"
+click-left = ksnip -f 
+click-right = ksnip -r
+
+[module/firefox]
+type = custom/script
+exec = echo "󰈹"
+click-left = "firefox"
+label-foreground = ${colors.color4}
+
+[module/files]
+type = custom/script
+exec = echo ""
+click-left = "nemo"
+label-foreground = ${colors.color0}
+
+[module/alacritty]
+type = custom/script
+exec = echo ""
+click-left = "alacritty"
+label-foreground = ${colors.color5}
+
+[module/spotify]
+type = custom/script
+exec = echo ""
+click-left = "flatpak run com.spotify.Client"
+label-foreground = ${colors.color1}
+
+[module/playerctl]
+type = custom/script
+exec = /home/axon/.config/polybar/playerctl.sh
+interval = 0.5
+
+[module/powermenu]
+type = custom/menu
+
+format-foreground = ${colors.xcolor7}
+format-background = ${colors.xcolor0}
+
+
+label-open = "¿?"
+label-open-font = 4
+label-close = ""
+label-close-foreground = ${colors.lime}
+label-separator = " / "
+label-separator-foreground = ${colors.xcolor1}
+
+
+; reboot
+menu-0-1 = 
+menu-0-1-exec = systemctl reboot
+menu-0-1-foreground = ${colors.salmon}
+; shutdown
+menu-0-0 = "  "
+menu-0-0-exec = systemctl poweroff
+menu-0-0-foreground = ${colors.salmon}
+
+
+[module/apple-logo]
+type = custom/script
+exec = echo " "
+;click-left = ""
+
+[module/xworkspacesROUND]
+
+type = internal/xworkspaces
+
+enable-click = true
+
+enable-scroll = true
+
+icon-default = 
+;icon-default = 
+
+label-monitor =
+
+format = " <label-state> "
+
+label-active = %icon%%{O5}
+
+label-active-foreground = ${colors.color0}
+
+label-occupied = %icon%%{O5}
+
+label-occupied-foreground = ${colors.primary}
+
+label-urgent = %icon%%{O5}
+
+label-urgent-foreground = ${colors.color4}
+
+label-empty = %icon%%{O5}
+
+label-empty-foreground = ${colors.color5}
+
+
+[module/spacer]
+type = custom/script
+exec = echo " "
+
+[module/theme-switcher]
+type = custom/script
+exec = echo "󱠓"
+click-left = "./.config/polybar/switch-to-everforest.sh"
+
+[module/divider]
+type = custom/script
+exec = echo "|"
+label-foreground = ${colors.primary}
+
+[module/endeavour]
+type = custom/script
+exec = echo ""
+label-forground = ${colors.color0}
+;click-left = ""
+
+[module/Moc]
+type = custom/script
+exec = mocp -i
+label-foreground = ${colors.color0}
+
+[module/mocpnext]
+type = custom/text
+content= "󰒭"
+click-left = mocp -f
+
+[module/mocpprev]
+type = custom/text
+content = "󰒮"
+click-left = mocp -r
+
+[module/mocppause]
+type = custom/text
+content = "  "
+click-left = mocp -G
+
+[module/mocpinfo]
+type = custom/script
+exec = mocp -i|grep "^File:"| rev |cut -d '/' -f1 | rev
+interval = 1
+tail = true
+label = %output:0:20:...%
+label-foreground = ${colors.color0}
+format-prefix = "󰝚 "
+format-prefix-foreground = ${colors.color2}

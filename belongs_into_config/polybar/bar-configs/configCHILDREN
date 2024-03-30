@@ -1,0 +1,203 @@
+[bar/themes]
+monitor = DisplayPort-0
+width = 10%.
+offset-x = 0.5%
+offset-y = 43
+height = 65pt
+radius = 10
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 0pt
+border-color = #e49e79
+
+bottom = false
+
+modules-center = spacer
+modules-left =
+modules-right =
+
+padding-left = 0
+padding-right = 1
+padding-top = 2
+padding-bottom = 3
+
+module-margin = 1
+
+;separator = |
+;separator = /
+separator-foreground = ${colors.primary}
+
+font-0 = SymbolsNerdFont-Regular;2
+font-1 = monospace;2
+;font-2 = "fontawesome-free-6.4.2-dekstop"
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+override-redirect = false
+
+[bar/CATPPUCCIN]
+monitor = DisplayPort-0
+width = 10%.
+offset-x = 0.5%
+offset-y = 48
+height = 20pt
+radius = 10
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 0pt
+border-color = #e49e79
+
+bottom = false
+
+modules-center = CATPPUCCIN
+modules-left =
+modules-right =
+
+padding-left = 0
+padding-right = 1
+padding-top = 2
+padding-bottom = 3
+
+module-margin = 1
+
+;separator = |
+;separator = /
+separator-foreground = ${colors.primary}
+
+font-0 = SymbolsNerdFont-Regular;2
+font-1 = monospace;2
+;font-2 = "fontawesome-free-6.4.2-dekstop"
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+override-redirect = false
+
+[bar/GRUVBOX]
+monitor = DisplayPort-0
+width = 10%.
+offset-x = 0.5%
+offset-y = 78
+height = 20pt
+radius = 10
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 0pt
+border-color = #e49e79
+
+bottom = false
+
+modules-center = GRUVBOX
+modules-left =
+modules-right =
+
+padding-left = 0
+padding-right = 1
+padding-top = 2
+padding-bottom = 3
+
+module-margin = 1
+
+;separator = |
+;separator = /
+separator-foreground = ${colors.primary}
+
+font-0 = SymbolsNerdFont-Regular;2
+font-1 = monospace;2
+;font-2 = "fontawesome-free-6.4.2-dekstop"
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+override-redirect = false
+
+[bar/EVERFOREST]
+monitor = DisplayPort-0
+width = 10%.
+offset-x = 0.5%
+offset-y = 108
+height = 20pt
+radius = 10
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 0pt
+border-color = #e49e79
+
+bottom = false
+
+modules-center = EVERFOREST
+modules-left =
+modules-right =
+
+padding-left = 0
+padding-right = 1
+padding-top = 2
+padding-bottom = 3
+
+module-margin = 1
+
+;separator = |
+;separator = /
+separator-foreground = ${colors.primary}
+
+font-0 = SymbolsNerdFont-Regular;2
+font-1 = monospace;2
+;font-2 = "fontawesome-free-6.4.2-dekstop"
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+override-redirect = false

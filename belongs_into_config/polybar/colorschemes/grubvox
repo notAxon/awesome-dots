@@ -1,0 +1,21 @@
+;gruvbox polybar colorscheme
+
+[colors]
+background = #32302f
+;background = #1e2030
+background-alt = #3c3836
+foreground = #ffffff
+primary = #ebdbb2
+secondary = #d5c4a1
+alert = #fb4934
+disabled = #707880
+blue = #83a598
+green = #b8bb26
+pink = #d3869b
+ornge = #fe8019
+red = #fb4934
+grey = #a89984
+yellow = #fabd2f
+purple = #bf3f71
+teal = #689d6a
+light-blue = #68d6a1

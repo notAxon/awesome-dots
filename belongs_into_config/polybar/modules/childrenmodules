@@ -1,0 +1,14 @@
+[module/CATPPUCCIN]
+type = custom/script
+exec = echo "Catppuccin"
+click-left = "source /home/axon/.config/polybar/scripts/switch-to-catppuccin.sh"
+
+[module/GRUVBOX]
+type = custom/script
+exec = echo "Gruvbox"
+click-left = "source /home/axon/.config/polybar/scripts/switch-to-gruvbox.sh"
+
+[module/EVERFOREST]
+type = custom/script
+exec = echo "Everforest"
+click-left = "source /home/axon/.config/polybar/scripts/switch-to-everforest.sh"

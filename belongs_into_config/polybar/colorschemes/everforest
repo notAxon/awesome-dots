@@ -1,0 +1,21 @@
+;everforest polybar colorscheme
+
+[colors]
+background = #2d3538
+;background = #1e2030
+background-alt = #343f44
+foreground = #ffffff
+primary = #a7c080
+secondary = #425047
+alert = #A54242
+disabled = #707880
+blue = #7fbbb3
+;light blue = #83c092
+green = #a7c080
+pink = #d69986
+ornage = #e69875
+red = #e67e80
+grey = #7a8478
+yellow = #dbbc7f
+purple = #d699b6
+teal = #7fe5b3
