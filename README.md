@@ -1,7 +1,7 @@
 # Dotfiles of my AwesomeWM configuration
 
-![the almighty rice (incomplete)](https://github.com/notAxon/awesome-dots/blob/main/ksnip_20240108-113415.png)
-![the almighty rice with the two-top-polybar config](https://github.com/notAxon/awesome-dots/blob/main/ksnip_20240212-165653.png)
+![the almighty rice (incomplete)](https://github.com/notAxon/awesome-dots/blob/main/screenshots/ksnip_20240108-113415.png)
+![the almighty rice with the two-top-polybar config](https://github.com/notAxon/awesome-dots/blob/main/screenshots/ksnip_20240212-165653.png)
 
 this only includes the most basic files to replicate my setup, such as 
 
