@@ -29,6 +29,10 @@ the fonts should be copied into `/usr/share/fonts/` for them to work properly, a
 + [cava](https://github.com/karlstav/cava)
 + neofetch(no instructions necessary)
 
+#### a link to my wallpaper collection can be found [here](https://github.com/notAxon/wallpapers)
+
+[first wallpaper](https://github.com/notAxon/wallpapers/blob/main/Anime/Screenshot_499.png) [second wallpaper](https://github.com/notAxon/wallpapers/blob/main/catppuccin/Pink_Flowers_Photograph_by_Lisa_Fotios.jpeg)
+
 ### Notes related to AwesomeWM
 
 all basic keybinds can be looked up by pressing `super + s`
