@@ -1,0 +1,76 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+;this is the everforest colorscheme
+
+;load the modules
+
+;include-file = ~/.config/polybar/modules/modules
+
+;load the colorschemes
+
+;include-file = ~/.config/polybar/colorschemes/everforest
+;include-file = ~/.config/polybar/colorschemes/catppuccin
+;include-file = ~/.config/polybar/colorschemes/gruvbox
+;include-file = ~/.config/polybar/colorschemes/default-color
+;include-file = ~/.config/polybar/colorschemes/
+
+
+[bar/top] 
+monitor = DisplayPort-0
+width = 99%
+offset-x = 0.5%
+offset-y = 5
+height = 26pt
+radius = 15
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 0pt
+border-color = #e49e79
+
+bottom = false
+
+padding-left = 0
+padding-right = 1
+padding-top = 2
+padding-bottom = 3
+
+module-margin = 1
+
+;separator = |
+;separator = /
+separator-foreground = ${colors.primary}
+
+font-0 = JetBrainsMono-Regular;2
+font-1 = SymbolsNerdFont-Regular;2
+font-2 = monospace;2
+;font-3 = "fontawesome-free-6.4.2-dekstop"
+font-4 = Noto Emoji:scape=15:antialias=false;0
+font-5 = 
+
+modules-left = spacer xworkspacesROUND  
+modules-right = update divider mocp notion proton-calendar divider polypomo nightshift divider pulseaudio divider date dash date2 power
+modules-center = 
+
+
+
+
