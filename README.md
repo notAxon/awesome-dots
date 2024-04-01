@@ -17,7 +17,7 @@ this only includes the most basic files to replicate my setup, such as
 
 ### basic stuff: 
 
-`awesome rofi polybar nitrogen alacritty nemo amixer ksnip neovim`
+>awesome rofi polybar nitrogen alacritty nemo amixer ksnip neovim
 
 all folders inside `belongs_in_config` belong, as the name implies, in the **.config** folder inside your `/home` directory. 
 the fonts should be copied into `/usr/share/fonts/` for them to work properly, as they are required by *alacritty* and *polybar*
@@ -51,12 +51,17 @@ this polybar config is divided into 5 subfolders:
    include executable scripts that launch the individual bars, the preferred bar can be selected in awesomeWMs `rc.lua`
 
 4. `/colorschemes`
-   contains all colorschemes aswell as `default-color`, a file which is the only file being loaded by polybar. by default, this file is a renamed copy of the `catppuccin` file, to apply a different theme, delete `default-colors` before copying and renaming another theme, such as `everforest`.
+   contains all colorschemes aswell as `default-color`, the only file being loaded by polybar. by default, this file is a renamed copy of the `catppuccin` file, to apply a different theme, delete `default-colors` before copying and renaming another theme, such as `everforest`.
 
 5. `scripts`
    contains the scripts, obviously
 
 
+
+### Screenshots
+
+![neovim, cava, pipes.sh and mocp](https://github.com/notAxon/awesome-dots/blob/main/screenshots/ksnip_20240401-093013.png)
+![neofetch, cava and mocp](https://github.com/notAxon/awesome-dots/blob/main/screenshots/ksnip_20240401-091251.png)
 
 
 
