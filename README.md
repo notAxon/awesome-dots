@@ -17,7 +17,12 @@ this only includes the most basic files to replicate my setup, such as
 
 ### basic stuff: 
 
->awesome rofi polybar nitrogen alacritty nemo amixer ksnip neovim
+> awesome rofi polybar alacritty nemo amixer ksnip 
+
+### optional stuff:
+
+> nitrogen neovim spicetify-cli lxappearance 
+
 
 all folders inside `belongs_in_config` belong, as the name implies, in the **.config** folder inside your `/home` directory. 
 the fonts should be copied into `/usr/share/fonts/` for them to work properly, as they are required by *alacritty* and *polybar*
