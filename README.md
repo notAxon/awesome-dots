@@ -44,19 +44,19 @@ the fonts should be copied into `/usr/share/fonts/` for them to work properly, a
 
 | Command | Description |
 | --- | --- |
-| `Super+Enter` | open Alacritty |
-| `Super+Shift+c` | close window |
-| `Super+Shift+y` | toggle tiling |
-| `Super+o` | restore wallpaper (nitrogen --restore) |
-| `Super+Shift+"+"` | kill polybar |
-| `Super+"+"` | reload polybar |
-| `Super+Shift+s` | take a screenshot using ksnip |
-| `Super+r` | run rofi |
-| `Super+a` | run rofi appmenu |
-| `Super+Ctrl+p` | run rofi powermenu |
-| `Super+e` | launch nemo file manager |
-| `Super+b` | launch firefox |
-| `Super+Shift+y` | toggle tiling |
+| `Super Enter` | open Alacritty |
+| `Super Shift c` | close window |
+| `Super Shift y` | toggle tiling |
+| `Super o` | restore wallpaper (nitrogen --restore) |
+| `Super Shift +` | kill polybar |
+| `Super +` | reload polybar |
+| `Super Shift s` | take a screenshot using ksnip |
+| `Super r` | run rofi |
+| `Super a` | run rofi appmenu |
+| `Super Ctrl p` | run rofi powermenu |
+| `Super e` | launch nemo file manager |
+| `Super b` | launch firefox |
+| `Super Shift y` | toggle tiling |
 
 >[!IMPORTANT] all basic keybinds can be looked up by pressing `super + s`
 
