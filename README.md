@@ -44,7 +44,7 @@ the fonts should be copied into `/usr/share/fonts/` for them to work properly, a
 
 | Command | Description |
 | --- | --- |
-| `Super+Enter` | opens Alacritty |
+| `Super+Enter` | open Alacritty |
 | `Super+Shift+c` | close window |
 | `Super+Shift+y` | toggle tiling |
 | `Super+o` | restore wallpaper (nitrogen --restore) |
