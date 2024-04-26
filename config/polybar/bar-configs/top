@@ -67,8 +67,8 @@ font-2 = monospace;2
 font-4 = Noto Emoji:scape=15:antialias=false;0
 font-5 = 
 
-modules-left = spacer xworkspacesROUND  
-modules-right = update divider mocp notion proton-calendar divider polypomo nightshift divider pulseaudio divider date dash date2 power
+modules-left = spacer xworkspacesROUND focus  
+modules-right = update divider mocp restream notion proton-calendar divider polypomo nightshift divider pulseaudio divider date dash date2 power
 modules-center = 
 
 

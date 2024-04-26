@@ -201,3 +201,55 @@ enable-ipc = true
 ; wm-restack = i3
 
 override-redirect = false
+
+
+[bar/anmocp]
+monitor = DisplayPort-0
+width = 15%
+offset-x = 15.5%
+offset-y = 5
+height = 26pt
+radius = 15
+; dpi = 96
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3pt
+
+border-size = 0pt
+border-color = #e49e79
+
+bottom = true
+
+modules-center = mocpplaying
+modules-left =
+modules-right =
+
+padding-left = 0
+padding-right = 1
+padding-top = 2
+padding-bottom = 3
+
+module-margin = 1
+
+;separator = |
+;separator = /
+separator-foreground = ${colors.primary}
+
+font-0 = SymbolsNerdFont-Regular;2
+font-1 = monospace;2
+;font-2 = "fontawesome-free-6.4.2-dekstop"
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+; tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+override-redirect = false

@@ -22,6 +22,10 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
+--require "ui"
+require "autostart"
+--require "bar"
+--require "bar3"
 
 -- Load Debian menu entries
 --local debian = require("debian.menu")
@@ -42,7 +46,7 @@ do
     awesome.connect_signal("debug::error", function (err)
         -- Make sure we don't go into an endless error loop
         if in_error then return end
-        in_error = true
+       in_error = true
 
         naughty.notify({ preset = naughty.config.presets.critical,
                          title = "there were some errors, but fuck them errors.",
@@ -92,7 +96,6 @@ awful.layout.layouts = {
 }
 
 -- }}}
-
 -- {{{ Menu
 -- Create a launcher widget and a main menu
 myawesomemenu = {
@@ -233,6 +236,7 @@ awful.screen.connect_for_each_screen(function(s)
       --  buttons = tasklist_buttons
     --}
 
+-- {{{ Menu
     -- Create the wibox bis "end" alles auskommentieren um wibar zu deaktivieren
 --    s.mywibox = awful.wibar({ position = "top", screen = s })
 
@@ -387,8 +391,8 @@ awful.key({ modkey, "Shift" },            "s",     function ()
 
     -- Prompt
     awful.key({ modkey },            "b",     function ()
-    awful.util.spawn("firefox") end,
-              {description = "firefox", group = "applications"}),
+    awful.util.spawn("brave") end,
+              {description = "brave", group = "applications"}),
 
     -- Prompt
     awful.key({ modkey, "Control" },            "+",     function ()
@@ -431,7 +435,7 @@ awful.key({ modkey, "Shift" },            "s",     function ()
               {description = "mocp", group = "applications"}),
 
     awful.key({ modkey },            "+",     function ()
-    awful.util.spawn("./.config/polybar/launch-bars/launch-twotop.sh") end,
+    awful.util.spawn("./.config/polybar/launch-bars/launch-top.sh") end,
               {description = "reload polybar", group = "applications"}),
 
     awful.key({ modkey, "Shift" },            "+",     function ()
@@ -439,12 +443,12 @@ awful.key({ modkey, "Shift" },            "s",     function ()
               {description = "kill polybar", group = "applications"}),
 
     awful.key({ modkey },            "ü",     function ()
-    awful.util.spawn("latte-dock") end,
-              {description = "launch latte dock", group = "applications"}),
+    awful.util.spawn("plank") end,
+              {description = "launch plank dock", group = "applications"}),
 
     awful.key({ modkey, "Shift" },            "Ü",     function ()
-    awful.util.spawn("pkill latte-dock") end,
-              {description = "kill latte", group = "applications"}),
+    awful.util.spawn("pkill plank") end,
+              {description = "kill the dock", group = "applications"}),
 
     awful.key({  },          "XF86AudioLowerVolume",     function ()
     awful.util.spawn("pactl -- set-sink-volume 0 -5%") end,
@@ -466,9 +470,13 @@ awful.key({ modkey, "Shift" },            "s",     function ()
     awful.util.spawn("pkill epiphany") end,
               {description = "close To-Do list", group = "applications"}),
 
-    awful.key({ "Control", "Alt" },          "delete",     function ()
-    awful.util.spawn("rofi -show p -modi p:rofi-power-menu") end,
-              {description = "rofi power menu", group = "system"}),
+    awful.key({ modkey },          "f",     function ()
+    awful.util.spawn("gtk-launch webapp-Notion2074") end,
+              {description = "launch the Notion webapp", group = "applications"}),
+
+    awful.key({ modkey, "Control" },            "p", function ()
+    awful.util.spawn("./.config/rofi/powermenu/type-2/powermenu.sh") end,
+              {description = "rofi powermenu", group = "system"}),
 
   
 --    awful.key({ modkey },            "t",     function ()
@@ -677,6 +685,9 @@ awful.rules.rules = {
     { rule = { class = "latte-dock" }, -- You might need to adjust the class name
         properties = { border_width = 0 } },
 
+    { rule = { class = "Plank" }, -- You might need to adjust the class name
+        properties = { border_width = 0 } },
+
     { rule = { },
         properties = {   focus = awful.client.focus.filter,
                          raise = true,
@@ -774,6 +785,7 @@ client.connect_signal("manage", function(c)
 end)
 
 
+
 --awful.key({ modkey,}, "0", function() awful.spawn("nitrogen --restore")
 --end)
 
@@ -823,30 +835,5 @@ local alacritty_scratch = bling.module.scratchpad {
 }
 
 --BIS HIER
-
---Autostart Applications
---awful.spawn.with_shell("compton")
-awful.spawn.with_shell("~/.config/arandr/default-layoutLANDSCAPE.sh")
---awful.spawn.with_shell("feh -z --bg-fill /home/axon/VagabondWallpaper")
---awful.spawn.with_shell("~/.config/awesome/nitrogenRestore.sh")
-awful.spawn.with_shell("picom -b --config ~/.config/picom/picom.conf")
-awful.spawn.with_shell("xrandr --output DisplayPort-0 --mode 1920x1080 --rate 120.00")
---awful.spawn.with_shell("feh --bg-scale ~/nordic-wallpapers/wallpapers/ign_evening.png")
---awful.spawn.with_shell("feh --bg-scale ~/Bilder/catppuccin")
---awful.spawn.with_shell("latte-dock")
-awful.spawn.with_shell("xrandr --output Displayport-0 --mode 1920x1080 --rate 144.00")
---awful.spawn.with_shell("picom --animations --animation-for-open-window fly-in -b --experimental-backends --config ~/.config/picom/picom.conf")
-awful.spawn.with_shell("nitrogen --restore")
---awful.spawn.with_shell(".~/.config/eww/launch/launcheww.sh")
-awful.spawn.with_shell("fcitx")
-
---launch polybar bars
---awful.spawn.with_shell("~/.config/polybar/launch-bars/launch.sh")
---awful.spawn.with_shell("~/.config/polybar/launch-bars/launch-less-wide.sh")
---awful.spawn.with_shell("~/.config/polybar/launch-bars/launchMultiple.sh")
---awful.spawn.with_shell("~/.config/polybar/launch-bars/launch.sh")
---awful.spawn.with_shell("~/.config/polybar/launch-bars/launch-multiple.sh")
-awful.spawn.with_shell("~/.config/polybar/launch-bars/launch-twotop.sh")
-
 
 

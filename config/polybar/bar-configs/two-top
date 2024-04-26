@@ -86,8 +86,8 @@ enable-ipc = true
 
 [bar/twotop-right]
 monitor = DisplayPort-0
-width = 36%
-offset-x = 63.5%
+width = 40%
+offset-x = 59.5%
 offset-y = 5
 height = 26pt
 radius = 15
@@ -121,8 +121,8 @@ font-1 = JetBrainsMono-Regular;2
 font-3 = Noto Emoji-Regular;2
 
 
-modules-left =
-modules-right = update divider mocp notion proton-calendar divider polypomo nightshift divider pulseaudio divider date divider date2
+modules-left = spacer update divider mocp notion proton-calendar divider polypomo nightshift
+modules-right = divider pulseaudio divider date dash date2 power 
 modules-center =
 
 cursor-click = pointer

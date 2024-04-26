@@ -1,0 +1,21 @@
+;catppuccin polybar colorscheme
+
+[colors]
+background = #eff1f5
+;background = #e6e9ef
+background-alt = #dce0e8
+foreground = #000000
+primary = #e49e79
+secondary = #5c5f77
+alert = #A54242
+disabled = #707880
+blue = #1e66f5
+sapphire = #209fb5
+teal = #179299
+green = #40a02b
+pink = #e5b4e2
+orange = #fe640b
+red = #d20f39
+grey = #4c4f69
+yellow = #df8e1d
+purple = #8839ef

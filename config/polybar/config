@@ -24,10 +24,6 @@ include-file = ~/.config/polybar/modules/childrenmodules
 ;load the colorschemes
 
 include-file = ~/.config/polybar/colorschemes/default-color
-;include-file = ~/.config/polybar/colorschemes/catppuccin
-;include-file = ~/.config/polybar/colorschemes/gruvbox
-;include-file = ~/.config/polybar/colorschemes/
-;include-file = ~/.config/polybar/colorschemes/
 
 ;load the child bars
 
@@ -39,3 +35,6 @@ include-file = ~/.config/polybar/bar-configs/config-multiple
 include-file = ~/.config/polybar/bar-configs/config-windows
 include-file = ~/.config/polybar/bar-configs/dock
 include-file = ~/.config/polybar/bar-configs/two-top
+include-file = ~/.config/polybar/bar-configs/top
+include-file = ~/.config/polybar/bar-configs/top-2
+

@@ -440,3 +440,33 @@ type = custom/script
 exec = echo "" 
 click-left = ~/.config/polybar/scripts/night-shift/night-shift.sh
 label-foreground = ${colors.orange}
+
+[module/dash]
+type = custom/script
+exec = echo -
+label-foreground = ${colors.primary}
+
+[module/power]
+type=custom/script
+exec = echo "⏻ "
+label-foreground = ${colors.red}
+click-left = source .config/rofi/powermenu/type-4/powermenu.sh
+
+[module/battery-combined-udev]
+type = custom/script
+exec = ~/.config/polybar/scripts/battery-combined-udev.sh
+tail = true
+label-foreground = ${colors.green}
+
+[module/restream]
+type = custom/script
+exec = echo "󰹑"
+click-left = source /mnt/9f4ae5a8-ba65-470a-b1c9-8b9c5ea7b439/container/restream/reStream.sh
+label-foreground = ${colors.orange}
+
+[module/focus]
+type = custom/script
+exec = echo " focus mode"
+click-left = source .config/polybar/scripts/focusmode/focusmode.sh 
+label-foreground = ${colors.purple}
+
