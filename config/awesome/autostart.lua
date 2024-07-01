@@ -25,3 +25,8 @@ awful.spawn.with_shell("fcitx")
 --awful.spawn.with_shell("~/.config/polybar/launch-bars/launch-multiple.sh")
 --awful.spawn.with_shell("~/.config/polybar/launch-bars/launch-twotop.sh")
 awful.spawn.with_shell("~/.config/polybar/launch-bars/launch-top.sh")
+--awful.spawn.with_shell("~/.config/polybar/launch-bars/launch-top-2.sh")
+awful.spawn.with_shell("polkit-gnome")
+awful.spawn.with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
+awful.spawn.with_shell("~/.config/gpu-screen-recorder/scripts/start-replay.sh")
+

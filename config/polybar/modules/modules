@@ -450,7 +450,7 @@ label-foreground = ${colors.primary}
 type=custom/script
 exec = echo "⏻ "
 label-foreground = ${colors.red}
-click-left = source .config/rofi/powermenu/type-4/powermenu.sh
+click-left = source .config/rofi/powermenu/type-3/powermenu.sh
 
 [module/battery-combined-udev]
 type = custom/script

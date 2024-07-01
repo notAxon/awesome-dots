@@ -391,7 +391,7 @@ awful.key({ modkey, "Shift" },            "s",     function ()
 
     -- Prompt
     awful.key({ modkey },            "b",     function ()
-    awful.util.spawn("brave") end,
+    awful.util.spawn("firefox") end,
               {description = "brave", group = "applications"}),
 
     -- Prompt
@@ -473,6 +473,10 @@ awful.key({ modkey, "Shift" },            "s",     function ()
     awful.key({ modkey },          "f",     function ()
     awful.util.spawn("gtk-launch webapp-Notion2074") end,
               {description = "launch the Notion webapp", group = "applications"}),
+
+    awful.key({ "Control", "Shift" },          "s",     function ()
+    awful.util.spawn("killall -SIGUSR1 gpu-screen-recorder") end,
+              {description = "Save the last 90 seconds", group = "applications"}),
 
     awful.key({ modkey, "Control" },            "p", function ()
     awful.util.spawn("./.config/rofi/powermenu/type-2/powermenu.sh") end,
@@ -648,7 +652,7 @@ awful.rules.rules = {
           "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
           "Wpa_gui",
           "veromix",
-          "kitty",
+          --"kitty",
           "epiphany",
           "xtightvncviewer"},
 
@@ -777,7 +781,7 @@ end)
 -- }}}
 
 client.connect_signal("manage", function(c)
-    if c.class ~= "Polybar" then
+    if c.class ~= "Polybar, Plank" then
         c.shape = function(cr, w, h)
               gears.shape.rounded_rect(cr, w, h, 12)
         end

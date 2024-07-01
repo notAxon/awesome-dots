@@ -391,7 +391,7 @@ awful.key({ modkey, "Shift" },            "s",     function ()
 
     -- Prompt
     awful.key({ modkey },            "b",     function ()
-    awful.util.spawn("brave") end,
+    awful.util.spawn("firefox") end,
               {description = "brave", group = "applications"}),
 
     -- Prompt
