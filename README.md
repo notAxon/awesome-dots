@@ -15,24 +15,38 @@ this only includes the most basic files to replicate my setup, such as
 >[!IMPORTANT]
 >before using any of the files, make sure to have at least the most necessary software installed, unless you know what you're doing:
 
+### cloning this repo:
+
+> git clone https://github.com/notAxon/awesome-dots/ && cd awesome-dots
+
 ### basic stuff: 
 
 > awesome rofi polybar alacritty nemo amixer ksnip 
 
 ### optional stuff:
 
-> nitrogen neovim spicetify-cli lxappearance 
+> nitrogen neovim lxappearance 
 
 
 all folders inside `belongs_in_config` belong, as the name implies, in the **.config** folder inside your `/home` directory. 
+
+> cp -r /belongs_in_config/* \$HOME/.config
+
 the fonts should be copied into `/usr/share/fonts/` for them to work properly, as they are required by *alacritty* and *polybar*
+
+> sudo cp -r /used\ fonts/*.ttf /usr/share/fonts/
+
+the GTK files are to be copied into `$/HOME/.themes` and `/$HOME/.icons` 
+
+> unzip /gtk/.themes.tar.gz /\$HOME/.themes 
+> unzip /gtk/.icons.tar.gz /\$HOME/.icons
 
 ### the fancy-looking terminal programs I adore:
 
 + moc (music on console), with darkdot theme (available through most package-managers)
 + [pipes.sh](https://github.com/pipeseroni/pipes.sh)
 + [cava](https://github.com/karlstav/cava)
-+ neofetch(no instructions necessary)
++ neofetch (no instructions necessary)
 
 #### a link to my wallpaper collection can be found [here](https://github.com/notAxon/wallpapers)
 
